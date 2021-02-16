@@ -1,0 +1,24 @@
+import org.opentutorials.iot.Elevator;
+import org.opentutorials.iot.Lighting;
+import org.opentutorials.iot.Security;
+
+public class OkJavaGoInHome {
+
+	public static void main(String[] args) {
+		// Elevator call
+		Elevator myElevator = new Elevator("JAVA APT 777");
+		// 타입   // 변수
+		myElevator.callForUp(1);
+		
+		// Security off
+		Security mySecurity = new Security("JAVA APT 777");
+		mySecurity.off();
+		// Light on
+		Lighting hallLamp = new Lighting("JAVA APT 777 / Hall Lamp");
+		hallLamp.on();
+		
+		Lighting floorLamp = new Lighting("JAVA APT 777 / floorLamp");
+		floorLamp.on();
+	}
+	
+}
